@@ -6,11 +6,6 @@
 <field name="name">Academy</field>
 <field name="res_model">academy.academy</field>
 <field name="view_mode">tree,form</field>
-<field name="help" type="html">
-<p>
-No courses found. Click "Create" to add a new course.
-</p>
-</field>
 </record>
 <!-- Menú principal de Academy -->
 <record id="main_academy_menu" model="ir.ui.menu">
