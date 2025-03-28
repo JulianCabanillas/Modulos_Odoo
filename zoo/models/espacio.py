@@ -4,7 +4,7 @@ from odoo import models, fields, api
 
 
 class zoo(models.Model):
-    _name = 'zoo.espacio'
+    _name = 'espacio'
     _description = 'Espacio del Zoológico'
 
     id_espacio = fields.Char(string='Id de Espacio', required=True)

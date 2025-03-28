@@ -1,20 +1,36 @@
 <odoo>
   <data>
-    <!-- Top menu item -->
+    <record model="ir.ui.view" id="view_espacio_tree">
+      <field name="name">Lista Espacios</field>
+      <field name="model">espacio</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="id_espacio"/>
+          <field name="tipo"/>
+          <field name="area_tematica"/>
+        </tree>
+      </field>
+    </record>
 
-    <menuitem name="Zoo" id="zoo.menu_root"/>
-    
-    <!-- menu categories -->
+    <record model="ir.ui.view" id="view_espacio_form">
+      <field name="name">Formulario Espacio</field>
+      <field name="model">espacio</field>
+      <field name="arch" type="xml">
+        <form string="Espacio">
+          <group>
+            <field name="id_espacio"/>
+            <field name="tipo"/>
+            <field name="area_tematica"/>
+          </group>
+        </form>
+      </field>
+    </record>
 
-    <menuitem name="Menu 1" id="zoo.menu_1" parent="zoo.menu_root"/>
-    <menuitem name="Menu 2" id="zoo.menu_2" parent="zoo.menu_root"/>
-    
-    <!-- actions -->
-
-    <menuitem name="List" id="zoo.menu_1_list" parent="zoo.menu_1"
-              action="zoo.action_window"/>
-    <menuitem name="Server to list" id="zoo" parent="zoo.menu_2"
-              action="zoo.action_server"/>
+    <record model="ir.actions.act_window" id="action_espacio">
+      <field name="name">Espacio</field>
+      <field name="res_model">espacio</field>
+      <field name="view_mode">tree,form</field>
+    </record>
 
   </data>
 </odoo>
