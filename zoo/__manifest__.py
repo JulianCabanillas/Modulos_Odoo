@@ -23,7 +23,10 @@ Zoo
     # always loaded
     'data': [
         'security/ir.model.access.csv',
-        'views/views.xml',
+        'views/animal_view.xml',
+        'views/cuidador_view.xml',
+        'views/espacio_view.xml',
+        'views/menu.xml',
         'views/templates.xml',
     ],
     # only loaded in demonstration mode
