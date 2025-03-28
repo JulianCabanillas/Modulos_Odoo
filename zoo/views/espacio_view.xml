@@ -1,0 +1,20 @@
+<odoo>
+  <data>
+    <!-- Top menu item -->
+
+    <menuitem name="Zoo" id="zoo.menu_root"/>
+    
+    <!-- menu categories -->
+
+    <menuitem name="Menu 1" id="zoo.menu_1" parent="zoo.menu_root"/>
+    <menuitem name="Menu 2" id="zoo.menu_2" parent="zoo.menu_root"/>
+    
+    <!-- actions -->
+
+    <menuitem name="List" id="zoo.menu_1_list" parent="zoo.menu_1"
+              action="zoo.action_window"/>
+    <menuitem name="Server to list" id="zoo" parent="zoo.menu_2"
+              action="zoo.action_server"/>
+
+  </data>
+</odoo>
