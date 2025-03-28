@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_zoo_zoo,zoo.zoo,model_zoo_zoo,base.group_user,1,1,1,1
+access_animal,animal,model_animal,base.group_user,1,1,1,1
+access_cuidador,cuidador,model_cuidador,base.group_user,1,1,1,1
+access_espacio,espacio,model_espacio,base.group_user,1,1,1,1

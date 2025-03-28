@@ -1,19 +1,24 @@
 # -*- coding: utf-8 -*-
 
-# from odoo import models, fields, api
+from odoo import models, fields, api
 
 
-# class zoo(models.Model):
-#     _name = 'zoo.zoo'
-#     _description = 'zoo.zoo'
+class zoo(models.Model):
+    _name = 'zoo.espacio'
+    _description = 'Espacio del Zoológico'
 
-#     name = fields.Char()
-#     value = fields.Integer()
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
-#
-#     @api.depends('value')
-#     def _value_pc(self):
-#         for record in self:
-#             record.value2 = float(record.value) / 100
-
+    id_espacio = fields.Char(string='Id de Espacio', required=True)
+    tipo = fields.Selection([
+        ('jaula', 'Jaula'),
+        ('vallado', 'Vallado'),
+        ('acuario', 'Acuario'),
+        ('terrarium', 'Terrarium'),
+    ], string='Tipo de Espacio', required=True)
+    
+    area_tematica = fields.Selection([
+        ('europa', 'Europa'),
+        ('asia', 'Asia'),
+        ('africa', 'África'),
+        ('america', 'América'),
+        ('oceania', 'Oceanía'),
+    ], string='Área Temática')

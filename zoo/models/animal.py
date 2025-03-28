@@ -1,19 +1,18 @@
 # -*- coding: utf-8 -*-
 
-# from odoo import models, fields, api
+from odoo import models, fields, api
 
 
-# class zoo(models.Model):
-#     _name = 'zoo.zoo'
-#     _description = 'zoo.zoo'
+class animal(models.Model):
+    _name = 'animal'
+    _description = 'Animal'
 
-#     name = fields.Char()
-#     value = fields.Integer()
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
-#
-#     @api.depends('value')
-#     def _value_pc(self):
-#         for record in self:
-#             record.value2 = float(record.value) / 100
+    nombre = fields.Char(string='Nombre', required=True)
+    especie = fields.Char(string='Especie')
+    id_animal = fields.Char(string='Id Animal', required=True)
+    id_pais = fields.Many2one('res.country', string='País Procedencia Animal')
+    edad = fields.Int(string='Edad')
+    fecha_entrada = fields.Date(string='Fecha de Entrada')
+
+     
 
