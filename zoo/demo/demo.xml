@@ -44,7 +44,7 @@
       <field name="nombre">León</field>
       <field name="especie">Pantera Leo</field>
       <field name="id_animal">Pan001</field>
-      <field name="id_pais", ref="base.mx"/>
+      <field name="id_pais" ref="base.mx"/>
       <field name="edad">8</field>
       <field name="fecha_entrada">2019-02-03</field>
     </record>
@@ -53,7 +53,7 @@
       <field name="nombre">Panda</field>
       <field name="especie">Ailuropoda Melanoleuca</field>
       <field name="id_animal">Panda001</field>
-      <field name="id_pais", ref="base.cn"/>
+      <field name="id_pais" ref="base.cn"/>
       <field name="edad">5</field>
       <field name="fecha_entrada">2020-10-11</field>
     
@@ -63,7 +63,7 @@
       <field name="nombre">Tiburón</field>
       <field name="especie">Carcharodon carcharias</field>
       <field name="id_animal">Tibu001</field>
-      <field name="id_pais", ref="base.br"/>
+      <field name="id_pais" ref="base.br"/>
       <field name="edad">15</field>
       <field name="fecha_entrada">2017-03-02</field>
     </record>
