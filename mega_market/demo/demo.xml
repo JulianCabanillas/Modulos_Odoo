@@ -1,30 +1,41 @@
 <odoo>
-    <data>
-<!--
-          <record id="object0" model="mega_market.mega_market">
-            <field name="name">Object 0</field>
-            <field name="value">0</field>
-          </record>
+  <data>
 
-          <record id="object1" model="mega_market.mega_market">
-            <field name="name">Object 1</field>
-            <field name="value">10</field>
-          </record>
+    <record id="demo_electro_1" model="electrodomestico">
+      <field name="name">Frigorifico</field>
+      <field name="codigo">FF00121</field>
+      <field name="pais_id" ref="base.us"/>
+      <field name="importe_compra">450</field>
+      <field name="moneda_id" ref="base.USD"/>
+      <field name="precio_venta">670</field>
+    </record>
 
-          <record id="object2" model="mega_market.mega_market">
-            <field name="name">Object 2</field>
-            <field name="value">20</field>
-          </record>
+    <record id="demo_electro_2" model="electrodomestico">
+      <field name="name">Lavadora</field>
+      <field name="codigo">LLV00254</field>
+      <field name="pais_id" ref="base.es"/>
+      <field name="importe_compra">200</field>
+      <field name="moneda_id" ref="base.EUR"/>
+      <field name="precio_venta">350</field>
+    </record>
 
-          <record id="object3" model="mega_market.mega_market">
-            <field name="name">Object 3</field>
-            <field name="value">30</field>
-          </record>
+    <record id="demo_cliente_1" model="cliente">
+      <field name="nombre">Julian</field>
+      <field name="apellidos">Cabanillas</field>
+      <field name="nif">12345678A</field>
+      <field name="direccion">Bormujos</field>
+      <field name="fecha_nacimiento">1992-03-23</field>
+      <field name="telefono">666777888</field>
+    </record>
 
-          <record id="object4" model="mega_market.mega_market">
-            <field name="name">Object 4</field>
-            <field name="value">40</field>
-          </record>
--->
-    </data>
+    <record id="demo_cliente_2" model="cliente">
+      <field name="nombre">Pepe</field>
+      <field name="apellidos">Sanchez Maroto</field>
+      <field name="nif">87654321B</field>
+      <field name="direccion">Av. numero 45</field>
+      <field name="fecha_nacimiento">1985-11-20</field>
+      <field name="telefono">999888777</field>
+    </record>
+
+  </data>
 </odoo>
