@@ -1,30 +1,74 @@
 <odoo>
-    <data>
-<!--
-          <record id="object0" model="zoo.zoo">
-            <field name="name">Object 0</field>
-            <field name="value">0</field>
-          </record>
+  <data>
 
-          <record id="object1" model="zoo.zoo">
-            <field name="name">Object 1</field>
-            <field name="value">10</field>
-          </record>
+    <record id="cuidador_1" model="cuidador">
+      <field name="nombre">Ana</field>
+      <field name="apellidos">López</field>
+      <field name="cargo">supervisor</field>
+      <field name="fecha_incorporacion">2015-03-10</field>
+    </record>
 
-          <record id="object2" model="zoo.zoo">
-            <field name="name">Object 2</field>
-            <field name="value">20</field>
-          </record>
+    <record id="cuidador_2" model="cuidador">
+      <field name="nombre">Carlos</field>
+      <field name="apellidos">Ramírez</field>
+      <field name="cargo">encargado</field>
+      <field name="fecha_incorporacion">2018-07-22</field>
+    </record>
 
-          <record id="object3" model="zoo.zoo">
-            <field name="name">Object 3</field>
-            <field name="value">30</field>
-          </record>
+    <record id="cuidador_3" model="cuidador">
+      <field name="nombre">Lucía</field>
+      <field name="apellidos">Gómez</field>
+      <field name="cargo">cuidador</field>
+      <field name="fecha_incorporacion">2021-01-05</field>
+    </record>
 
-          <record id="object4" model="zoo.zoo">
-            <field name="name">Object 4</field>
-            <field name="value">40</field>
-          </record>
--->
-    </data>
+    <record id="espacio_1" model="espacio">
+      <field name="id_espacio">ESP-001</field>
+      <field name="tipo">jaula</field>
+      <field name="area_tematica">africa</field>
+    </record>
+
+    <record id="espacio_2" model="espacio">
+      <field name="id_espacio">ESP-002</field>
+      <field name="tipo">acuario</field>
+      <field name="area_tematica">oceania</field>
+    </record>
+
+    <record id="espacio_3" model="espacio">
+      <field name="id_espacio">ESP-003</field>
+      <field name="tipo">vallado</field>
+      <field name="area_tematica">america</field>
+    </record>
+
+    <record id="animal_1" model="animal">
+      <field name="nombre">León</field>
+      <field name="especie">Pantera Leo</field>
+      <field name="id_animal">Pan001</field>
+      <field name="id_pais", ref="base.mx"/>
+      <field name="edad">8</field>
+      <field name="fecha_entrada">2019-02-03</field>
+    </record>
+
+    <record id="animal_2" model="animal">
+      <field name="nombre">Panda</field>
+      <field name="especie">Ailuropoda Melanoleuca</field>
+      <field name="id_animal">Panda001</field>
+      <field name="id_pais", ref="base.cn"/>
+      <field name="edad">5</field>
+      <field name="fecha_entrada">2020-10-11</field>
+    
+    </record>
+
+    <record id="animal_3" model="animal">
+      <field name="nombre">Tiburón</field>
+      <field name="especie">Carcharodon carcharias</field>
+      <field name="id_animal">Tibu001</field>
+      <field name="id_pais", ref="base.br"/>
+      <field name="edad">15</field>
+      <field name="fecha_entrada">2017-03-02</field>
+    </record>
+
+  </data>
 </odoo>
+
+

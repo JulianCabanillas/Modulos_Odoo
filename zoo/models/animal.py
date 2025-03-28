@@ -11,7 +11,7 @@ class animal(models.Model):
     especie = fields.Char(string='Especie')
     id_animal = fields.Char(string='Id Animal', required=True)
     id_pais = fields.Many2one('res.country', string='País Procedencia Animal')
-    edad = fields.Int(string='Edad')
+    edad = fields.Integer(string='Edad')
     fecha_entrada = fields.Date(string='Fecha de Entrada')
 
      
