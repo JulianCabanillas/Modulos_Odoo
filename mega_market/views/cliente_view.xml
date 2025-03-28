@@ -8,6 +8,9 @@
         <tree>
           <field name="nombre"/>
           <field name="apellidos"/>
+          <field name="nif"/>
+          <field name="direccion"/>
+          <field name="fecha_nacimiento"/>
           <field name="telefono"/>
         </tree>
       </field>
