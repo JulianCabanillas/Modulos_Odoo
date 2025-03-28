@@ -1,0 +1,13 @@
+<odoo>
+  <data>
+
+    <menuitem name="MegaMarket" id="mega_market.menu_root"/>
+    
+    <menuitem name="Electrodomésticos" id="mega_market.menu_electro"
+              parent="mega_market.menu_root" action="action_electrodomestico"/>
+
+    <menuitem name="Clientes" id="mega_market.menu_cliente"
+              parent="mega_market.menu_root" action="action_cliente"/>
+
+  </data>
+</odoo>

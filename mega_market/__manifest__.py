@@ -23,9 +23,9 @@ MegaMarket
     # always loaded
     'data': [
         'security/ir.model.access.csv',
-        'views/views.xml',
         'views/cliente_view.xml',
         'views/electrodomestico_view.xml',
+        'views/menu.xml',
         'views/templates.xml',
     ],
     # only loaded in demonstration mode
